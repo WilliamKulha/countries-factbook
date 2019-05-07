@@ -1,0 +1,37 @@
+.card-wrapper {
+  width: 200px;
+  height : 300px;
+  margin: 5vh 5vw;
+  background-color : #fff;
+  padding: 10px;
+  border-radius : 15px;
+  display: flex;
+  flex-flow : column nowrap;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+
+.country-flag {
+  img {
+    height : 100px;
+    width : 150px;
+  }
+}
+
+.country-language {
+  display : flex;
+  flex-flow : column nowrap;
+  justify-content : space-around;
+  max-height : 125px;
+}
+
+.long-language {
+  display : flex;
+  flex-flow : column wrap;
+  justify-content : space-around;
+  max-height : 125px;
+  font-size : .75em;
+}

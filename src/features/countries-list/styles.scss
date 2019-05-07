@@ -1,0 +1,9 @@
+.countries-wrapper {
+  display : flex;
+  flex-flow : row wrap;
+  justify-content : space-around;
+  height : 50vh;
+  overflow : scroll;
+  background : #999;
+  border-radius : 15px;
+}
