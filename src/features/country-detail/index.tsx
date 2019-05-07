@@ -12,6 +12,7 @@ interface IState {
   isLoaded : boolean
   isError : boolean
   wikiData : any
+  loading : boolean
 
 }
 
@@ -19,7 +20,8 @@ export default class CountryDetail extends React.Component<IProps, IState>  {
   state : IState = {
     isLoaded : false,
     isError : false,
-    wikiData : {}
+    wikiData : {},
+    loading : true
   }
 
   private isEmpty(object : any) {
@@ -35,10 +37,14 @@ export default class CountryDetail extends React.Component<IProps, IState>  {
   }
 
   private fetchWikiData = (endUrlToFetch : string) => {
+    this.setState({
+      loading : true
+    })
     fetch(endUrlToFetch)
     .then(response => response.json())
       .then(results => this.setState({
-        wikiData : results
+        wikiData : results,
+        loading : false
       }))
   }
 
@@ -149,7 +155,7 @@ export default class CountryDetail extends React.Component<IProps, IState>  {
 
 
   public render() {
-    if (this.isEmpty(this.state.wikiData) === true) {
+    if (this.isEmpty(this.state.wikiData) === true || this.state.loading === true) {
       return (
         <div className="spinner-container">
           <LoadingSpinner />

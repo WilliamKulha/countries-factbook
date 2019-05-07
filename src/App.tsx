@@ -28,7 +28,6 @@ class App extends React.Component<{}, IState> {
   }
 
   captureClickedCountry = (countryCode: string) => {
-    console.log(this.state.countriesList.find(desired => desired.numericCode === countryCode))
     this.setState({
       currentCountry : this.state.countriesList.find(desired => desired.numericCode === countryCode)
     })
