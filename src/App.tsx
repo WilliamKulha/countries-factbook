@@ -3,7 +3,7 @@ import './App.css';
 import { API_COUNTRIES } from './config/config'
 import { LoadingSpinner }from './features/loading-spinner/index'
 import { CountriesList } from './features/countries-list/index'
-import CountryDetail from './features/current-country/index'
+import CountryDetail from './features/country-detail/index'
 
 type IState = {
   countriesList : Array<any>
