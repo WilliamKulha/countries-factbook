@@ -1,44 +1,53 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+# **World Factbook**
 
-In the project directory, you can run:
+#### By William Kulha 5-8-2019
 
-### `npm start`
+## Description
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+A React web application written in typescript that displays a list of all the world's countries and, by using the Wikimedia API, lets the user read basic facts about them.
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+## Specifications
 
-### `npm test`
+| Specification | Input | Output |
+| :--- | :--- | :--- |
+**Application loads, fetching a list of countries from the REST Countries API** | JSON Parsed list of countries | Application's state's countriesList property set to the country list, and the countries are rendered on cards for the user|
+**Application can display extra information about particular countries**| User clicks a particular country card | CountryDetail component fetches Wikimedia information about the clicked country and displays it for the user.
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Setup/Installation Requirements
 
-### `npm run build`
+* To view project code, _clone repository from_ https://github.com/WilliamKulha/countries-factbook
+* To install the project on your own machine, clone the repository from command line <code>$ git clone https://github.com/WilliamKulha/countries-factbook</code>.
+* Navigate to the projects directory using CLI and install dependencies <code>$ npm install</code>.
+* Start the project on a development server on your own machine using the CLI <code>$ npm start</code>
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Known Bugs
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+No known bugs at this time.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Contact
 
-### `npm run eject`
+If you find any bugs, or would like to get in touch, shoot me a line at kulha.william@gmail.com
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Technologies Used
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+* SCSS
+* NPM
+* REST Country API
+* Wikimedia API
+* TypeScript
+* React
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## License
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+MIT
 
-## Learn More
+Copyright (c) 2019 **_William Kulha_**
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
